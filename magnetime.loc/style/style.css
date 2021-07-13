@@ -1,0 +1,127 @@
+@charset "utf-8";
+/* CSS Document */
+@font-face {
+    font-family: 'aRubricaXtCnRegular';
+    src: url('a_rubricaxtcn-webfont.eot');
+    src: url('a_rubricaxtcn-webfont.eot?#iefix') format('embedded-opentype'),
+    url('a_rubricaxtcn-webfont.woff') format('woff'),
+    url('a_rubricaxtcn-webfont.ttf') format('truetype'),
+    url('a_rubricaxtcn-webfont.svg#aRubricaXtCnRegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+/*общие стили*/
+body{padding:0; margin:0; font-family:Arial, Helvetica, sans-serif; font-size:14px; color:#1268b7}
+#wrapper{margin:0 auto 15px; width:1046px; border:1px solid #aaa; background:#cbd7e0;/*url(img/body-shadow.png) repeat-y center*/
+    -moz-box-shadow: 0 -2px 20px 5px #999;  -webkit-box-shadow: 0 -2px 20px 5px #999; box-shadow: 0 -2px 20px 5px #999;
+;}
+
+/*хедер*/
+#header{background:url(img/header-center.png) no-repeat 295px 28px #CBD7E0; height:236px;}
+#header-top{height:26px; margin-top: -1px; background:#306bb0; border:1px solid #fff; border-top: none; text-align: center; letter-spacing: 1px; color:#fff; font-size: 23px; font-family: aRubricaXtCnRegular;
+    -webkit-border-bottom-right-radius: 7px;
+    -webkit-border-bottom-left-radius: 7px;
+    -moz-border-radius-bottomright: 7px;
+    -moz-border-radius-bottomleft: 7px;
+    border-bottom-right-radius: 7px;
+    border-bottom-left-radius: 7px;}
+#header img{margin-top:14px;}
+#header #logo{float:right; margin:2px 20px;}
+/*конец хедер*/
+
+/*левый блок*/
+#left-side{float:left; margin-top:50px; width:253px;}
+.ls-radius-shadow{-webkit-border-radius:14px; -moz-border-radius:14px; border-radius:14px; -moz-box-shadow: 5px 5px 10px #999;  -webkit-box-shadow: 5px 5px 10px #999; box-shadow: 5px 5px 10px #999; border:1px solid #FFF; width:200px; color:#FFF; text-align:center; font-size:14px; font-weight:bold; margin:0 0 38px 35px}
+#ls-first{background:#1268b7; line-height:24px; margin-top:30px;  padding:7px 0;}
+#ls-mrt{background:#000; overflow:hidden; position:relative;  height:222px;}
+#ls-mrt img{margin-top:2px}
+#ls-mrt > div{background:#1268b7; padding:5px; bottom:11px; left:0; position:absolute; width:192px;}
+#ls-contacts{background:url(img/ls-tel.png) no-repeat 67px 0; margin:80px 0 38px 40px; color:#323232; padding-top:75px;}
+#ls-contacts-tel{font-size:26px; font-weight:bold; margin-left:30px}
+#ls-contacts-tel span{font-family:"Arial Black", Gadget, sans-serif}
+#ls-contacts-addr{display:block; margin-top:50px; font-size:13px; font-weight:bold; line-height:24px}
+/*конец левый блок*/
+
+#content{background:#FFF; padding:5px 6px 0 5px; -webkit-border-top-left-radius: 5px; -moz-border-radius-topleft: 5px; border-top-left-radius: 5px; position:relative;}
+#cont-shape{background:#f8fafb; height:100%; -webkit-border-radius:5px/20px; -moz-border-radius:5px/20px; border-radius:5px/20px; padding:0px 10px 0}
+#content-wrapper{padding-top:40px;}
+#content-wrapper h1{font-weight:bold; font-size:14px; text-align:center; margin:0; padding-top:20px;}
+#content-wrapper h1, #content-wrapper p{line-height:20px}
+#content-wrapper p{text-indent:40px}
+#content-wrapper p span{font-weight:bold}
+#content-wrapper dl{margin-bottom:40px}
+#content-wrapper dt{margin-top:20px}
+.cont-border-img{width:5px; height:5px; position:absolute; background:url(img/border-img.png) no-repeat;}
+.wrapper-border-rad{ -webkit-border-radius:20px/5px; -moz-border-radius:20px/5px; border-radius:20px/5px;}
+#content{
+    margin-left: 253px;
+    -webkit-border-bottom-left-radius: 0;
+    -moz-border-radius-bottomleft: 0;
+    border-bottom-left-radius: 0;
+    -webkit-border-top-right-radius: 0;
+    -moz-border-radius-topright: 0;
+    border-top-right-radius: 0;
+
+}
+/*меню*/
+#top-menu-wrapper{position:absolute; height:60px; width:100%; overflow:hidden; top:0;}
+#top-menu{height:28px; width:622px;
+    margin:0 auto; list-style:none;
+    background:url(img/top-menu.png) repeat-x #367fc2; left:60px; top:0;
+    border: 1px solid #fff;
+    border-top: none;
+    -webkit-border-radius:20px/30px; -moz-border-radius:20px/30px; border-radius:20px/30px;
+    -webkit-border-top-left-radius: 0px;
+    -webkit-border-top-right-radius: 0px;
+    -moz-border-radius-topleft: 0px;
+    -moz-border-radius-topright: 0px;
+    border-top-left-radius: 0px;
+    border-top-right-radius: 0px;
+    box-shadow: 0 -2px 20px 5px #999999;
+}
+#top-menu li{float:left}
+#top-menu a{display:block; height:28px; padding:1px 18px; color:#fff; opacity:0.7; text-decoration:none; font-size: 23px; font-family: aRubricaXtCnRegular; word-spacing:-2px; letter-spacing: 1px; background-repeat:no-repeat; background-position:center 6px}
+#top-menu a:hover, #top-menu .menu-active{opacity:1;}
+.menu-active{cursor:default;}
+#prevent{font-size:30px; font-family:"Arial Black", Gadget, sans-serif; text-align:center; padding-top:40px}
+/*конц меню*/
+
+.img-left{float:left; margin:15px 3px 5px 0px;}
+.img-right{float:right; margin:5px 0 5px 5px;}
+/*конец общие стили*/
+
+/*услуги*/
+#content-wrapper.service {font-size:15px}
+dl a{text-decoration: none; color:#1268B7;}
+dl a:hover{text-decoration: underline;}
+/*конец услуги*/
+
+/*возможности*/
+#content-wrapper.opportunity{font-weight:bold;}
+#content-wrapper.opportunity span{padding-left:40px}
+#cont-shape #content-wrapper.opportunity p{line-height:17px}
+#content-wrapper.opportunity h1{font-family:"Arial Black", Gadget, sans-serif; margin-bottom:25px;}
+#content-wrapper.opportunity ul{text-indent:25px; list-style:none;}
+#content-wrapper.opportunity ul li{background:url(img/list-circle.png) no-repeat 0 6px; margin-bottom:15px}
+#content-wrapper.opportunity .img-left{margin:2px 10px 15px 30px;}
+#opportunity-img-left{margin:30px 0 20px 55px;}
+#opportunity-img-left img{margin:5px 0 0 5px; float:left; border: none}
+/*конец возможности*/
+
+/*запись на мрт*/
+form > div{background: #fff; margin: 10px; padding: 10px; -webkit-border-radius: 5px; -moz-border-radius: 5px; border-radius: 5px;}
+form ul{list-style: none}
+form label{line-height: 25px;}
+form li span{margin-left:24px; line-height:25px;}
+#weekday select, #contact-name input, #contact-phone input{margin-left: 50px;}
+#weekday select, #contact-name input, #contact-phone input, #input-other{width: 200px}
+.is-valid{color:red; font-size: 20px}
+/*конец запись на мрт*/
+
+/*контакты*/
+#content-wrapper.contacts, {font-size:15px; font-weight:normal}
+#content-wrapper.contacts h1{font-size:15px; font-weight:normal; margin-bottom:30px}
+#contacts-block{text-align:center; line-height:20px}
+#contact-map{margin:40px;}
+#contact-map img{margin:0 auto; display:block}
+/*конец контакты*/

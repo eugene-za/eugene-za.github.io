@@ -1,0 +1,418 @@
+@font-face {
+  font-family : 'brutal_typeextralight';
+  src         : url('fonts/brutaltype-extralight-webfont.woff') format('woff'),
+  url('fonts/brutaltype-extralight-webfont.ttf') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+@font-face {
+  font-family : 'brutal_typemedium';
+  src         : url('fonts/brutaltype-medium-webfont.woff') format('woff'),
+  url('fonts/brutaltype-medium-webfont.ttf') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+@font-face {
+  font-family : 'robotobold';
+  src         : url('fonts/roboto-bold-webfont.woff') format('woff'),
+  url('fonts/roboto-bold-webfont.ttf') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+@font-face {
+  font-family : 'robotolight';
+  src         : url('fonts/roboto-light-webfont.woff') format('woff'),
+  url('fonts/roboto-light-webfont.ttf') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+@font-face {
+  font-family : 'robotomedium';
+  src         : url('fonts/roboto-medium-webfont.woff') format('woff'),
+  url('fonts/roboto-medium-webfont.ttf') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+body {
+  margin      : 0;
+  font-size   : 19px;
+  font-family : "robotolight", sans-serif;
+  }
+.container {
+  max-width : 1920px;
+  margin    : auto;
+  }
+.content {
+  max-width  : 1200px;
+  margin     : auto;
+  padding    : 0 15px;
+  box-sizing : border-box;
+  }
+header.main {
+  background      : url("img/header-bg.jpg") no-repeat center;
+  background-size : cover;
+  text-align      : center;
+  padding-bottom  : 184px;
+  }
+.logo-container {
+  height          : 87px;
+  background      : url("img/logo-bg.jpg") no-repeat center;
+  background-size : cover;
+  border-bottom   : 4px solid #2b1e15;
+  margin-bottom   : 452px;
+  }
+@media all and (max-width : 866px) {
+  .logo-container {
+    height       : 10vw;
+    border-width : .4vw;
+    }
+  header.main {
+    padding-bottom : 11vh;
+    }
+  .logo-container {
+    margin-bottom : 54vh;
+    }
+  }
+.logo-container .logo {
+  width     : 100%;
+  max-width : 866px;
+  }
+.button-wrapper {
+  position   : relative;
+  display    : inline-block;
+  box-shadow : 0 .4em .5em rgba(0, 0, 0, .4);
+  font-size  : 1.9em;
+  }
+.button-wrapper:before, .download-button:before {
+  content         : "";
+  display         : block;
+  position        : absolute;
+  left            : 50%;
+  top             : 0;
+  margin-left     : -5.05em;
+  background      : url("img/button-highlight.png") no-repeat;
+  width           : 10.1em;
+  height          : 7.05em;
+  margin-top      : -3.525em;
+  background-size : cover;
+  }
+.download-button {
+  position        : relative;
+  text-decoration : none;
+  color           : #fff;
+  line-height     : 1.21em;
+  letter-spacing  : .056em;
+  display         : block;
+  white-space     : nowrap;
+  text-align      : center;
+  font-family     : "brutal_typemedium", sans-serif;
+  background      : url("img/button-bg.png") no-repeat;
+  background-size : cover;
+  padding         : .7em 1.7em .18em;
+  box-shadow      : 0 0 1em rgba(224, 55, 19, 0.5);
+  overflow        : hidden;
+  }
+@media all and (max-width : 866px) {
+  .button-wrapper {
+    font-size : 5vw;
+    }
+  }
+.download-button:hover {
+  background-position : bottom;
+  box-shadow          : 0 0 1em rgba(255, 153, 0, 0.5);
+  }
+.download-button span {
+  font-size      : .45em;
+  display        : block;
+  font-family    : "brutal_typeextralight", sans-serif;
+  letter-spacing : 0;
+  }
+@font-face {
+  font-family : 'platforms';
+  src         : url('fonts/platfom-icons.woff?79vczw') format('woff'),
+  url('fonts/platfom-icons.ttf?79vczw') format('truetype');
+  font-weight : normal;
+  font-style  : normal;
+  }
+.other-platforms span {
+  display     : inline-block;
+  padding     : 19px 0 22px;
+  font-family : "robotomedium", sans-serif;
+  color       : #fff;
+  font-size   : 15px;
+  }
+.other-platforms nav {
+  cursor : default;
+  }
+.other-platforms nav a {
+  font-size               : 45px;
+  color                   : #fff;
+  width                   : 40px;
+  height                  : 40px;
+  padding                 : 7px;
+  text-align              : center;
+  border-radius           : 4px;
+  cursor                  : pointer;
+  transition              : .1s background-color linear;
+  text-decoration         : none;
+  text-shadow             : 0 0 10px rgba(0, 0, 0, .4);
+  font-family             : 'platforms' !important;
+  speak                   : none;
+  font-style              : normal;
+  font-weight             : normal;
+  font-variant            : normal;
+  text-transform          : none;
+  line-height             : 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing  : antialiased;
+  -moz-osx-font-smoothing : grayscale;
+  }
+.other-platforms nav a:hover {
+  background-color : rgba(255, 255, 255, .15);
+  }
+.icon-apple:before {
+  content : "\e900";
+  }
+.icon-linux:before {
+  content : "\e901";
+  }
+.icon-windows:before {
+  content : "\e902";
+  }
+h2, .slide-image, .text {
+  width : calc(50% - 15px);
+  }
+.text {
+  letter-spacing : .8px;
+  padding-right  : 30px;
+  line-height    : 1.22;
+  box-sizing     : border-box;
+  }
+.content:after {
+  content : "";
+  display : block;
+  clear   : both;
+  }
+.text p {
+  margin-top    : 0;
+  margin-bottom : 23px;
+  }
+h2 {
+  font-size     : 36px;
+  font-weight   : normal;
+  font-family   : "robotobold", sans-serif;
+  margin-top    : 0;
+  margin-bottom : 22px;
+  }
+.slide-image {
+  text-align : center;
+  }
+.slide-image img {
+  max-width : 100%;
+  }
+section.slide1, section.slide2 {
+  padding : 117px 0 110px;
+  }
+section.slide1 .slide-image img {
+  margin-top : 24px;
+  }
+section.slide2 .slide-image img {
+  margin-top : -26px
+  }
+section.slide1 {
+  background : url("img/slide-bg.jpg") -18px 0;
+  border-top : 1px solid #fff;
+  }
+section.slide1 .button-wrapper {
+  font-size  : 1.19em !important;
+  margin-top : 35px;
+  }
+section.slide1 .button-wrapper:before {
+  display : none;
+  }
+section.slide1 .slide-image {
+  float       : right;
+  margin-left : 30px;
+  }
+section.slide2 .slide-image {
+  float        : left;
+  margin-right : 30px;
+  }
+section.slide1 h2 {
+  float : left;
+  }
+section.slide2 h2 {
+  float : right;
+  }
+section.slide1 .text {
+  float : right;
+  }
+section.slide2 .text {
+  float : left;
+  }
+@media all and (max-width : 822px) {
+  h2 {width : 100%}
+  .slide-image, .text {
+    float  : none;
+    margin : 0;
+    width  : 100%;
+    }
+  .text {
+    padding : 0;
+    }
+  section.slide1, section.slide2 {
+    padding : 80px 0;
+    }
+  section.slide2 .slide-image img {
+    margin-top    : 40px;
+    margin-bottom : 20px;
+    }
+  }
+@media all and (max-width : 450px) {
+  section.slide1 .button-wrapper {
+    font-size : 5.65vw !important;
+    }
+  h2 {
+    font-size : 25px;
+    }
+  }
+div.comments {
+  background      : url("img/comments-bg.jpg") no-repeat center;
+  background-size : cover;
+  }
+div.comments .content {
+  position   : relative;
+  padding    : 166px 0 76px;
+  overflow-x : hidden;
+  }
+div.comments .content > img {
+  position : absolute;
+  right    : 0;
+  bottom   : 0;
+  height   : 78%;
+  }
+div.comments .owl-carousel .item {
+  width    : 80%;
+  display  : inline-block;
+  position : relative;
+  }
+div.comments .owl-carousel .item:before {
+  content    : "";
+  display    : block;
+  position   : absolute;
+  width      : 103px;
+  height     : 70px;
+  background : url("img/comment-quotes.png") no-repeat;
+  top        : -40px;
+  left       : -35px;
+  z-index    : 10;
+  }
+div.comments .owl-carousel .comment {
+  background      : url("img/comment-bg.png") no-repeat;
+  background-size : cover;
+  border          : 1px solid #63b725;
+  border-radius   : 5px;
+  box-sizing      : border-box;
+  color           : #fff;
+  text-align      : left;
+  padding         : 43px 48px 35px;;
+  position        : relative;
+  }
+@media all and (max-width : 822px) {
+  div.comments .owl-carousel .comment {
+    padding-left  : 25px;
+    padding-right : 25px;
+    }
+  div.comments .content {
+    padding-top : 116px;
+    }
+  }
+@media all and (max-width : 450px) {
+  div.comments .owl-carousel .comment {
+    padding-left  : 15px;
+    padding-right : 15px;
+    }
+  }
+div.comments .owl-carousel .comment:before {
+  box-sizing                 : border-box;
+  content                    : "";
+  display                    : block;
+  position                   : absolute;
+  width                      : calc(100% - 10px);
+  top                        : 100%;
+  left                       : 5px;
+  height                     : 4px;
+  border                     : 1px solid rgba(99, 183, 37, 0.4);
+  background-color           : rgba(79, 152, 32, 0.62);
+  border-top                 : transparent;
+  border-bottom-left-radius  : 3px;
+  border-bottom-right-radius : 3px;
+  }
+div.comments .owl-carousel .comment:after {
+  box-sizing                 : border-box;
+  content                    : "";
+  display                    : block;
+  position                   : absolute;
+  width                      : calc(100% - 20px);
+  top                        : calc(100% + 3px);
+  left                       : 10px;
+  height                     : 4px;
+  border                     : 1px solid rgba(159, 91, 31, 0.69);
+  background-color           : rgba(108, 59, 20, 0.71);
+  border-top                 : transparent;
+  border-bottom-left-radius  : 3px;
+  border-bottom-right-radius : 3px;
+  }
+div.comments .owl-carousel .comment p {
+  font-family   : "robotolight", sans-serif;
+  margin-top    : 0;
+  margin-bottom : 22px;
+  }
+div.comments .owl-carousel .comment .author {
+  font-size   : 24px;
+  font-family : "robotobold", sans-serif;
+  }
+.owl-item {
+  text-align : center;
+  }
+.owl-carousel .owl-stage-outer {
+  overflow : visible !important;
+  }
+.owl-dots {
+  text-align : center;
+  margin-top : 77px;
+  }
+.owl-dots button {
+  outline : none;
+  }
+.owl-dot span {
+  display          : inline-block;
+  width            : 14px;
+  height           : 14px;
+  background-color : rgba(255, 255, 255, 0.51);
+  border-radius    : 50%;
+  margin           : 7px;
+  }
+.owl-dot.active span {
+  background-color : rgb(255, 255, 255);
+  }
+footer.main {
+  padding    : 75px 0;
+  text-align : center;
+  font-size  : 18px;
+  }
+footer.main .content {
+  max-width : 678px;
+  margin    : auto;
+  padding   : 15px;
+  }
+footer.main address {
+  font-weight : bold;
+  font-style  : normal;
+  }
+footer.main address a {
+  color           : #000;
+  font-family     : "robotobold", sans-serif;
+  font-weight     : normal;
+  text-decoration : none;
+  }
